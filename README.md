@@ -1,7 +1,9 @@
-= Python-Logging =
+# Python-Logging #
+
 A context based logging utility for Python.
 
-== Intro ==
+## Intro ##
+
 When writing a bigger project, one comes to thing about textual output. In some
 cases, such as tests, it should be avoided, but for debugging, it might be
 important to have. Further, you might not want to be bothered with the
@@ -10,7 +12,8 @@ Hence Python-Logging provides you with a context based output, that can be used
 to generate logfiles or print to the console and shuts up the logging you don't
 need.
 
-== Use ==
+## Use ##
+
 For your convenience, there are already predefined Contexts and loggers. Thus the easiest way to use Python-Logging is
 
     from Logging import *
