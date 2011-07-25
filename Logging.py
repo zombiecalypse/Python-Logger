@@ -28,6 +28,9 @@ class Logger(object):
 	def __call__(self, string):
 		if issubclass(self.__parent.context,self.__context):
 			self.__parent.show(string, self.__context)
+	@property
+	def parent(self):
+		return self.__parent
 
 def noinfo():
 	return ""
