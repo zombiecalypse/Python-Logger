@@ -41,3 +41,12 @@ from datetime import datetime
 default_logger.info_gen = datetime.now
 default_logger.info_padding = 30
 warn("Has time included")
+default_logger.info_gen = noinfo
+default_logger.info_padding = 0
+print "==================================================================="
+from Logging import *
+log("Base")
+with Indent():
+	log("Higher")
+	with Indent(Debug):
+		log("Still the same")
