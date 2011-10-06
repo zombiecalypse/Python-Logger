@@ -52,6 +52,7 @@ class LoggerParent(object):
 		return Logger(self, context)
 	def show(self, string, context):
 		self.__writable.write("%s%s%s\n" % (context.__name__.ljust(self.padding+self.indent[context]), str(self.info_gen()).ljust(self.info_padding), string))
+		self.__writable.flush()
 default_logger = LoggerParent()
 fatal = default_logger(Fatal)
 error = default_logger(Error)
